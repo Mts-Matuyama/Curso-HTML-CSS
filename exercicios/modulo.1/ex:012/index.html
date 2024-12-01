@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video com HTML5</title>
+</head>
+<body>
+    <h1>Vamos inserir um vídeo hospedado localmente</h1>
+    <p>Este video está hospedado no meu próprio servidor</p>
+    <!--O navegador Chrome é compativel com todos formatos de vídeo.
+        Quem possui Iphone, a base de seu navegador é o Safari e nele o OGV não é compatível, por isso o importante é adicionar todas as formas possíveis para rodar o vídeo.
+        O formato mais recomendavel é o m4v-->
+    <video width="750" controls poster="imagens/limoes-capa.png">
+        <source src="midia/meu-video.mp4" type="video/mp4">
+        <source src="midia/meu-video.m4v" type="video/m4v">
+        <source src="midia/meu-video.webm" type="video/webm">
+        <source src="midia/meu-video.ogv" type="video/ogg">
+    </video>
+    <!--O processo é praticamente igual a inserir um audio ou imagem adaptavel, pode se considerar uma junção dos dois procedimentos vistos anteriromente, mas de uma maneira mais simples-->
+'   <h1>Adicionando um vídeo retirado do YouTube</h1>
+    <p>Guanabara, não me processa, só to testando exercicio kk</p>
+    <iframe width="750" height="415" src="https://www.youtube.com/embed/3hng-hmSv2Y?si=i5LCCA56HGggpQOG" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <!--Inserir um video hospedado localmente, consome muito da hospedagem e pode sair caro para o dono do site, já um video retirado externamente, de outro local como o YouTube por exemplo, não consome nada do repositório.-->
+</html>

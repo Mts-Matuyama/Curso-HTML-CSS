@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Imagens Dinamicas</h1>
+    <p>Vamos adicionar 5 tamanhos de imagens diferentes, de acordo que mudar o tamanho da janela, esta imagem irá se adaptar par uma com o tamanho correto</p>
+    <picture>
+        <source media="(max-width:550px)" srcset="imagens/foto-pp.png" type="image/png">
+        <source media="(max-width:750px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width:1050px)" srcset="imagens/foto-m.png" type="image/png">
+        <source media="(max-width:1350px)" srcset="imagens/foto-g.png" type="image/png">
+        <img src="imagens/foto-gg.png" alt="Imagem flexivel">
+    </picture>
+ <!--A base é a imagem padrão que queremos carregar, acima dela colocamos os sourcees na onde que, se não estiver na ordem correta, irá falhar. A ordem deve ser seguida. Para realizar esta ação em HTML, devemos abrir primeiro a tag picture e inserir a imagem dentro dela, em cima de img, adicionar os sources.-->
+    <h1>Reproduzindo audios</h1>
+    <p>Aprendendo a colocar audios em HTML5.</p>
+    <audio preload="metadata" controls autoplay loop>
+        <source src="midia/Scrapbook - Silent Partner.mp3" type="audio/mpeg">
+        <source src="midia/Scrapbook - Silent Partner (online-audio-converter.com).ogg" type="audio/ogg">
+    </audio>
+     <!--Para ter compatibilidade 100% com todos navegadores, é necessário ter audio em formato WAV, OGG e MP3.
+     Como o WAV é muito pesado, recomenda não fazer compatibilidade com ele, para não deixar o site lento, para isso adicionar um link para baixar o arquivo-->
+     
+</body>
+</html>
